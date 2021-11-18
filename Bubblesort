@@ -1,0 +1,14 @@
+def BubbleSort(list1):  
+    
+    for i in range(0,len(list1)-1):  
+        for j in range(len(list1)-1):  
+            if(list1[j]>list1[j+1]):  
+                m = list1[j]  
+                list1[j] = list1[j+1]  
+                list1[j+1] = m  
+    return list1  
+list1 = [22, 13, 28, 66, 107, 2]  
+  
+print("The unsorted list is: ", list1)  
+  
+print("The sorted list is: ", BubbleSort(list1))
